@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Đăng Nhập</title>
+    <link rel="shortcut icon" href="../LuxuryStore/Images/luxurylogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/login.css" type="text/css" rel="stylesheet">
+    <!-- <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script> -->
+    <script src="https://use.fontawesome.com/releases/v5.12.0/js/all.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Images\luxurylogo.jpg" height="30" width="30">
+                <a class="navbar-brand" href="index.html">LUXURY STORE</a>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+            <div>
+                <form class="form-inline">
+                    <div class="d-flex justify-content-center h-100">
+                        <div class="searchbar">
+                            <input class="search_input" type="text" name="" placeholder="Search...">
+                            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item " id="list-dt">
+                        <a class="nav-link" href="listphone.html">Điện thoại <span class="sr-only">(current)</span></a>
+                        <ul id="list">
+                            <li class="nav-1-1 first parent"><a href="">Apple</a>
+                                <ul style="padding-left: 10px;padding-right: 5px;">
+                                    <li><a href="">iPhone 11 | 11 Pro | 11 ProMax</a></li>
+                                    <li>
+                                        <li><a href="">iPhone XS | XS Max</a></li>
+                                        <li>
+                                            <li><a href="">iPhone X | XR</a></li>
+                                            <li>
+                                                <li><a href="">iPhone 8 | 8 Plus</a></li>
+                                                <li>
+                                                    <li><a href="">iPhone 7 | 7 Plus</a></li>
+                                                    <li>
+                                                        <li><a href="">iPhone 6S | 6S Plus</a></li>
+                                                        <li>
+                                </ul>
+                                </li>
+                                <li class="menu-dt" style="margin-left: 240px; margin-top: -238px"><a href="">SAMSUNG</a></li>
+                                <li class="menu-dt" style="margin-left: 240px;"><a href="">SONY</a></li>
+                                <li class="menu-dt" style="margin-left: 240px;"><a href="">OPPO</a></li>
+                                <li class="menu-dt" style="margin-left: 240px;"><a href="">VSMART</a></li>
+                                <li class="menu-dt" style="margin-left: 240px;"><a href="">XIAOMI</a></li>
+                                <li class="menu-dt" style="margin-left: 240px;"><a href="">ASUS</a></li>
+                                <li class="menu-dt" style="margin-left: 240px;"><a href="">HUWEI</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Phụ kiện</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tablet</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Trả góp</a>
+                        </li>
+                        <li class="nav-item" id="dv">
+                            <a class="nav-link" href="#" id="sv">Dịch vụ</a>
+                            <ul id="service">
+                                <li><a href="#">Thay pin</a></li>
+                                <li><a href="#">Ép kính</a></li>
+                                <li><a href="#">Thay màn hình</a></li>
+                                <li><a href="#">Sửa chữa</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Khuyến mãi</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <!-- HaiNam -->
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Account</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="login.html">Login</a>
+                                <!-- java không link đi đâu cả -->
+                                <a class="dropdown-item" href="register.html">Register</a>
+                                <a class="dropdown-item" href="javascripts:void(0);" data-toggle="modal" data-target="#modallogout">Log out</a>
+                            </div>
+                        </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid bg">
+        <div class="row">
+            <!-- <div class="col-md-4"></div> -->
+            <div class="col-md-4 mx-auto">
+                <form class="form-container">
+                    <h2>Đăng nhập</h2>
+                    <div class="form-group" id="form-login">
+                        <label for="myEmailSignUp">User Name</label>
+                        <input type="text" name="Email" id="Name" class="form-control" placeholder="User Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="myPasswordSignUp">Mật khẩu</label>
+                        <input type="password" name="Password" id="Pass" class="form-control" placeholder="Mật khẩu">
+                        <span id="icon-click">
+                            <i class="fas fa-eye" aria-hidden="true" id="eye"></i>
+                        </span>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+							<input type="checkbox"> Ghi nhớ mật khẩu
+						</label>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success btn-block" id="signin">Đăng nhập</button>
+                    </div>
+                    <div class="form-group">
+                        <p style="text-align: center; margin-top: 5px;"><a href="#">Quên mật khẩu?</a></p>
+                        <p class="note" style="text-align:center">Bạn chưa có tài khoản? Đăng ký <a href="#register" data-toggle="modal">tại đây</a></p>
+                    </div>
+                </form>
+            </div>
+            <!-- <div class="col-md-4"></div> -->
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="registerLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="registerLabel" style="color: rgb(15, 134, 238);">Đăng ký</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			  </button>
+                </div>
+                <div class="modal-body">
+                    <form class="createAcc" id="formRegister">
+                        <div class="form-group">
+                            <label for="myEmail">Email</label>
+                            <input type="email" name="myEmail" id="myEmail" class="form-control" placeholder="Email">
+                            <!-- <span id="text"></span> -->
+                        </div>
+                        <div class="form-group">
+                            <label for="myUserName">Tên người dùng</label>
+                            <input type="text" name="userName" id="username" class="form-control" placeholder="Tên người dùng">
+                        </div>
+                        <div class="form-group">
+                            <label for="myPassword">Mật khẩu</label>
+                            <input type="password" name="myPassword" id="myPassword" class="form-control" placeholder="Mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <label for="myPasswordConfirm">Xác nhận mật khẩu</label>
+                            <input type="password" name="confirmPass" id="confirmPass" class="form-control" placeholder="Xác nhận mật khẩu">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" id="Register">Đăng ký</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST-->
+
+    <div class="toast" id="failedToastSignin" data-delay="3000" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header Failed">
+            <strong class="mr-auto">Sign in Failed</strong>
+            <!-- <small>now</small> -->
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+        </div>
+        <div class="toast-body Failed">
+            Đăng nhập không thành công! Vui lòng xem lại form.
+        </div>
+    </div>
+    <div class="toast" id="successToastSignin" data-delay="3000" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header Success">
+            <strong class="mr-auto">Sign in Success</strong>
+            <!-- <small>now</small> -->
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+        </div>
+        <div class="toast-body Success">
+            Đăng nhập thành công!
+        </div>
+    </div>
+
+    <div class="toast" id="failedToast" data-delay="3000" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header Failed">
+            <strong class="mr-auto">Register Failed</strong>
+            <!-- <small>now</small> -->
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+        </div>
+        <div class="toast-body Failed">
+            Đăng ký không thành công! Vui lòng sửa lại bảng mẫu.
+        </div>
+    </div>
+    <div class="toast" id="successToast" data-delay="3000" style="position: absolute; top: 0; right: 0;">
+        <div class="toast-header Success">
+            <strong class="mr-auto">Register Success</strong>
+            <!-- <small>now</small> -->
+            <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		  </button>
+        </div>
+        <div class="toast-body Success">
+            Đăng ký thành công!
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="JS/login.js"></script>
+
+</body>
+
+</html>
